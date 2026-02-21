@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abin John | Portfolio</title>
+
+    <link rel="icon" type="image/jpg" href="{% static 'image/logo.jpg' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<nav>
+    <div><b>Portfolio.</b></div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-img">
+        <img src="{% static 'image/abin1.jpg' %}">
+    </div>
+
+    <h1>Abin John</h1>
+    <h3>Python Full Stack Developer</h3>
+
+    <p class="hero-desc">
+        Entry-level Python Full Stack Developer focused on Django, backend logic,
+        and responsive frontend development.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#projects" class="btn primary">My Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+        <a href="https://files.catbox.moe/f30mkb.pdf" class="btn primary">Resume</a>
+        <a href="https://www.linkedin.com/in/abin-john-262850349" class="btn secondary">LinkedIn</a>
+    </div>
+</section>
+
+<section class="section" id="education">
+    <h2 class="h2">Education</h2>
+
+    <div class="projects">
+        <div class="project edu-card">
+            <h3>Python Full Stack Development</h3>
+            <div class="edu-org">IPCS Global</div>
+            <div class="edu-desc">
+                Python, Django, REST APIs, MySQL, HTML, CSS, JavaScript, React
+            </div>
+        </div>
+
+        <div class="project edu-card">
+            <h3>B.Com (Co-Operation)</h3>
+            <div class="edu-org">University of Calicut</div>
+            <div class="edu-desc">
+                Commerce, accounting, and business studies.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+        <a href="https://github.com/abinjohnk19/moto_kid_django_project1"
+           target="_blank"
+           class="project project-link">
+            <h3>Online Vehicle Service Booking</h3>
+            <h5>Python, Django,Html,Css, Bootstrap</h5>
+            <p>Vehicle service booking with departments, mechanics, and confirmations.</p>
+        </a>
+
+        <a href="https://github.com/abinjohnk19/portfoilo"
+           target="_blank"
+           class="project project-link">
+            <h3>Portfolio Website</h3>
+            <h5>Django, HTML, CSS, JavaScript</h5>
+            <p>Personal portfolio showcasing skills and projects.</p>
+        </a>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-box">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Message"></textarea>
+        <button>Send Message</button>
+    </div>
+</section>
+
+<!-- SOCIAL ICONS -->
+<div class="social-icons">
+    <a href="https://wa.me/7902790510" target="_blank" class="social-btn whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/a_bin__john__" target="_blank" class="social-btn instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://facebook.com/" target="_blank" class="social-btn facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://github.com/abinjohnk19" target="_blank" class="social-btn github">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/abin-john-262850349" target="_blank" class="social-btn linkedin">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+</div>
+
+<footer>
+    © 2026 Abin John | All Rights Reserved
+</footer>
+
+</body>
+</html>
